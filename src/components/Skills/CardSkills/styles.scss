@@ -1,0 +1,26 @@
+.card_container_skills {
+   @apply p-10 md:w-1/3 md:mb-0 mb-6 flex flex-col;
+
+   &_item {
+
+      &_content {
+         @apply rounded bg-secondary p-4 transform translate-x-6 -translate-y-6;
+
+         &_img {
+            @apply w-10 h-10 inline-flex items-center justify-center bg-slate-50 rounded-full mb-5 flex-shrink-0 p-2;
+         }
+
+         &_description {
+            @apply flex-grow;
+
+            &_name {
+               @apply text-xl font-medium font-playfair mb-3;
+            }
+
+            &_detail {
+               @apply leading-relaxed text-sm font-playfair text-justify;
+            }
+         }
+      }
+   }
+}

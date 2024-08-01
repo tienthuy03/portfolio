@@ -1,0 +1,99 @@
+.container_home {
+   @apply mt-[56px] min-h-[100vh] justify-center items-center relative;
+
+   &_bg {
+      @apply h-full absolute inset-0 z-[1];
+
+      &_image {
+         @apply h-full w-full;
+      }
+   }
+
+   &_content {
+      @apply max-w-[120rem] mx-auto relative z-[2] px-6 md:px-8 lg:px-10;
+
+      &_wrapper {
+         @apply w-full flex flex-col relative space-y-6;
+
+         &_introduce {
+            @apply mb-0 text-gray-50 md:pb-36 space-y-6 md:mt-[16rem] mt-[10rem];
+
+            &_portfolio {
+               @apply font-light text-sm font-playfair;
+            }
+
+            &_name {
+               @apply text-3xl md:text-5xl max-w-[30rem] font-medium font-playfair;
+
+               &_thuytien {
+                  @apply text-primary font-playfair font-bold;
+               }
+            }
+
+            &_contact {
+               @apply md:flex-row flex-col flex gap-4;
+
+               &_btn {
+                  @apply text-base font-medium px-12 py-2 border rounded-lg cursor-pointer bg-gray-50/10 backdrop-blur-3xl;
+
+                  &_text {
+                     @apply ml-2 font-playfair font-medium
+                  }
+               }
+            }
+         }
+
+         &_social {
+            @apply justify-center flex flex-row md:flex-col gap-[10px] md:absolute md:right-0 md:bottom-32 text-gray-50 my-16;
+
+            &_icon {
+               @apply text-[24px] text-primary;
+            }
+         }
+
+
+      }
+
+      &_description {
+         @apply relative;
+
+         &_name {
+            @apply font-playfair font-medium md:text-[56px] text-[24px];
+
+            &_thuytien {
+               @apply text-primary font-bold font-playfair;
+            }
+         }
+
+         &_social {
+            @apply flex flex-col;
+
+            &_follow {
+               @apply flex flex-col md:flex-row gap-4 md:gap-8 md:items-center mt-4 md:mt-8;
+
+               &_text {
+                  @apply md:text-[24px] text-[14px] font-medium font-playfair;
+               }
+
+               &_icon {
+                  @apply flex flex-row gap-4;
+               }
+            }
+
+            &_contact {
+               @apply mt-8 flex flex-col md:flex-row md:items-center gap-4 md:gap-8;
+
+               &_icon {
+                  @apply flex flex-row items-center;
+
+                  &_text {
+                     @apply ml-2 font-playfair font-medium;
+                  }
+               }
+            }
+         }
+
+      }
+   }
+
+}

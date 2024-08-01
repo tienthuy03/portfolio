@@ -1,0 +1,25 @@
+.container_about {
+   @apply min-h-[100vh] py-16 bg-white justify-center items-center;
+
+   &_content {
+      @apply container m-auto px-6 text-gray-600 md:px-16 xl:px-6;
+
+      &_wrapper {
+         @apply space-y-6 md:space-y-0 md:flex md:gap-6 lg:items-center;
+
+         &_text-about {
+            @apply text-center text-[4rem] text-primary font-playfair font-bold;
+         }
+
+         &_name {
+            @apply text-2xl text-gray-900 font-playfair font-bold md:text-4xl;
+         }
+
+         &_description {
+            @apply my-4 text-gray-600 font-playfair font-light
+         }
+      }
+
+
+   }
+}

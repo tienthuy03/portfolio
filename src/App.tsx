@@ -1,14 +1,18 @@
 
 
 import React from 'react'
+import { About, Experience, Footer, Header, Home, Project, Skills } from './components'
 
 const App = () => {
   return (
-    <div className='flex' >
-      <p className='text-red-500 justify-center text-center text-[20px] font-bold'>
-        This is a Tailwind CSS styled component.
-      </p>
-
+    <div>
+      <Header />
+      <Home />
+      <About />
+      <Skills />
+      <Experience />
+      <Project />
+      <Footer />
     </div>
 
   )

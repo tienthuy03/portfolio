@@ -1,0 +1,19 @@
+.header_portfolio {
+   @apply w-full fixed top-0 z-50 border-b border-gray-200 bg-white shadow-md;
+
+   &_content {
+      @apply justify-between items-center flex flex-row px-12 py-4;
+
+      &_menu {
+         @apply hidden md:flex gap-12 md:justify-start md:items-center;
+      }
+
+      &_iconMenu {
+         @apply md:hidden block text-gray-700 hover:text-gray-900 mt-2;
+      }
+   }
+
+   &_menu_drawer {
+      @apply flex flex-col gap-4
+   }
+}
