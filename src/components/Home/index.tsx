@@ -21,7 +21,7 @@ const Home = () => {
                      </button>
                      <button className="container_home_content_wrapper_introduce_contact_btn">
                         <IonIcon name="call" />
-                        <span className="container_home_content_wrapper_introduce_contact_btn_text">0971761090</span>
+                        <span className="container_home_content_wrapper_introduce_contact_btn_text">0971xxxxxx</span>
                      </button>
                   </div>
                </div>

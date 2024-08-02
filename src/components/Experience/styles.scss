@@ -1,0 +1,27 @@
+.experience_h1 {
+   @apply pt-10 text-center font-bold font-playfair text-primary text-[4rem]
+}
+
+.container_experience {
+   @apply min-h-[100vh] py-20 items-center justify-center bg-white px-4 md:px-20;
+
+   &_card {
+      @apply space-y-6 border-l-2 border-dashed;
+
+      &_item {
+         @apply relative w-full;
+
+         &_content {
+            @apply ml-6;
+
+            &_h4 {
+               @apply font-bold text-primary;
+
+               &_p {
+                  @apply mb-2;
+               }
+            }
+         }
+      }
+   }
+}

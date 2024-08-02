@@ -1,0 +1,69 @@
+.container_project {
+   @apply relative pt-2 lg:pt-2 min-h-[100vh] md:px-10 bg-primary;
+
+   &_h1 {
+      @apply text-center text-white font-playfair font-bold text-[3rem];
+   }
+
+   &_content {
+      @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 text-center px-2 mx-auto;
+
+      &_card {
+         @apply bg-white p-6 mb-6 shadow transition duration-300 transform hover:-translate-y-2 hover:shadow-2xl rounded-2xl cursor-pointer border;
+
+         &_content {
+            @apply relative mb-4 rounded-2xl;
+
+            &_img {
+               @apply max-h-80 rounded-2xl w-full object-cover transition-transform duration-300 transform group-hover:scale-105
+            }
+
+            &_watch {
+               @apply flex justify-center items-center bg-secondary bg-opacity-80 z-10 absolute top-0 left-0 w-full h-full text-white rounded-2xl opacity-0 transition-all duration-300 transform group-hover:scale-105 text-xl group-hover:opacity-100;
+
+               &_icon {
+                  @apply ml-2;
+               }
+            }
+         }
+
+         &_desc {
+            @apply flex justify-between items-center w-full pb-4 mb-auto;
+
+            &_item {
+               @apply flex items-center;
+
+               &_img {
+                  @apply pr-3;
+
+                  &_background {
+                     @apply h-12 w-12 rounded-full object-cover;
+                  }
+               }
+
+
+            }
+
+            &_information {
+
+               &_thuytien {
+                  @apply text-sm font-bold font-playfair -ml-16
+               }
+
+               &_publish {
+                  @apply text-sm text-gray-500 font-medium font-playfair;
+               }
+
+            }
+         }
+
+         &_h3 {
+            @apply font-medium text-xl leading-8;
+
+            &_content {
+               @apply block relative group-hover:text-red-700 transition-colors duration-200;
+            }
+         }
+      }
+   }
+}

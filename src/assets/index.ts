@@ -19,11 +19,14 @@ const Images = {
     mail_icon,
     bg_header,
 
+
 }
 
 const Svgs = {
     bg_home,
-    react
+    react,
 }
+const Videos = {
 
-export { Images, Svgs }
+}
+export { Images, Svgs, Videos }
